@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Salvo</title>
+</head>
+
+<body>
+
+    <h1>Salvo</h1>
+
+    <form id="form_login" onsubmit="return false">
+        Name:
+        <input type="email" name="username" required=required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+
+        Password:
+        <input type="password" name="password" required=" required" pattern=".{2,}" title="Two or more characters" >
+
+        <button onclick="login()" type="button" class="btn btn-secondary">Login</button>
+
+        <form>
+            <button type="button" class="btn btn-secondary " style="display:none;">Logout</button>
+        </form>
+
+    </form>
+
+
+    <div id="table"></div>
+
+    <div id="game_score"></div>
+
+
+
+</body>
+
+<script src="../scripts/games.js"></script>
+
+</html>
